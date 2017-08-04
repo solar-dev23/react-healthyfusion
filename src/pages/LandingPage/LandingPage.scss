@@ -1,0 +1,1104 @@
+* {
+  box-sizing: border-box;
+}
+
+.landing-layout {
+  height: 100%;
+
+  .landing-signup-page {
+    margin-top: 15em;
+  }
+
+  .main-container {
+    margin-top: 10em;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 10px;
+
+    &--column {
+      flex-flow: column;
+    }
+
+    &--space-between {
+      justify-content: space-between;
+    }
+
+    &--space-around {
+      justify-content: space-around;
+    }
+
+    &--align-top {
+      align-items: flex-start;
+    }
+
+    &--extend {
+      max-width: 100%;
+    }
+
+    &--center {
+      justify-content: center;
+    }
+  }
+
+  &__bg-wrapper {
+    background: url("../../img/landing-layout__bg-1.jpg") 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  /*============
+      Header
+  ============*/
+  .landing-layout-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    &__top-row,
+    &__bottom-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Header top row */
+    &__top-row {
+      padding: 15px 0;
+      color: #fff;
+      background-color: #95cb60;
+    }
+
+    &__call-us-block {
+      margin-right: 6.5%;
+    }
+
+    &__call-us,
+    &__email {
+      line-height: 24px;
+    }
+
+    &__login-block {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+
+    &__login-block {
+      input {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 150px;
+        height: 25px;
+        margin-right: 10px;
+        padding: 0 10px;
+        border: none;
+        border-radius: 3px;
+        color: #333;
+        outline: none;
+
+        &::placeholder {
+          color: #7d7d7d;
+        }
+      }
+    }
+
+    &__go-btn {
+      width: 50px;
+      height: 25px;
+      border: none;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      background-color: rgba(103, 140, 66, .7);
+      cursor: pointer;
+
+      transition: all .2s ease-in-out;
+
+      &:disabled {
+        color: rgba(255, 255, 255, .5);
+        background-color: rgba(103, 140, 66, .5);
+        cursor: default;
+
+        &:hover {
+          color: rgba(255, 255, 255, .5);
+          background-color: rgba(103, 140, 66, .5);
+        }
+      }
+
+      &:not(:disabled):hover {
+        background-color: rgb(98, 135, 61);
+      }
+    }
+    /* / Header top row */
+
+    /* Header bottom row */
+    &__bottom-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      min-height: 80px;
+      color: #333;
+      background-color: #fff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__main-logo {
+      width: 23%;
+      height: 45px;
+      background: url("../../img/logo.png") no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+
+    &__main-menu {
+      display: flex;
+      min-height: 80px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__main-menu-link {
+      display: block;
+      position: relative;
+      height: 100%;
+      padding: 30px 25px;
+      text-align: center;
+      background-color: transparent;
+
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background-color: rgba(149, 203, 96, .6);
+      }
+    }
+
+    &__search {
+      width: 200px;
+      height: 30px;
+      padding: 0 10px;
+      border: 1px solid #999;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #333;
+      background-color: transparent;
+      outline: none;
+
+      &::placeholder {
+        font-size: 14px;
+        color: #999;
+      }
+    }
+    /* / Header bottom row */
+  }
+  /*==============
+      / Header
+  ==============*/
+
+  /* Slider */
+  .slick-slider {
+    &__slide {
+      display: flex;
+      justify-content: center;
+      height: 600px;
+
+      &--1 {
+        background: url("../../img/slides/slide-1/slide-1.png") 50% 50% no-repeat;
+        background-size: cover;
+      }
+
+      &--2 {
+        background: url("../../img/slides/slide-2/slide-2.png") 50% 50% no-repeat;
+        background-size: cover;
+
+        .slick-slider__slide-info {
+          background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        .slick-slider__slide-title {
+          color: #4994ec;
+          text-transform: uppercase;
+        }
+
+        .slick-slider__slide-text {
+          color: #333;
+        }
+
+        .slick-slider__slide-read-more-btn {
+          color: #fff;
+          background-color: #95cb60;
+
+          transition: all .2s ease-in-out;
+
+          &:hover {
+            color: #fff;
+            background-color: rgb(98, 135, 61);
+          }
+        }
+      }
+
+      &--3 {
+        background: url("../../img/slides/slide-3/slide-3.png") 50% 50% no-repeat;
+        background-size: cover;
+
+        .slick-slider__slide-title {
+          color: #333;
+        }
+
+        .slick-slider__slide-text {
+          color: #333;
+        }
+      }
+    }
+
+    &__slide-info {
+      max-width: 400px;
+      padding: 35px 40px;
+      border: 1px solid #fff;
+      color: #fff;
+      background-color: rgba(254, 254, 254, 0.3);
+    }
+
+    &__slide-title {
+      margin-bottom: 30px;
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__slide-text {
+      margin-bottom: 40px;
+      line-height: 1.7;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__slide-read-more-btn {
+      display: block;
+      width: 140px;
+      height: 40px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 38px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+      background-color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        color: #76a14c;
+      }
+    }
+
+    .slick-dots {
+      bottom: 10px;
+
+      button {
+        &::before {
+          font-size: 10px;
+        }
+      }
+
+      .slick-active {
+        button {
+          &::before {
+            color: #73bc2c;
+          }
+        }
+      }
+    }
+  }
+  /* / Slider */
+
+  /* Contact Us */
+  &__contact-us-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    min-height: 150px;
+  }
+
+  &__contact-us-information-block {
+    color: #333;
+    margin: 0 50px;
+  }
+
+  &__contact-us-information-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__contact-us-information-text {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  &__contact-us-btn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 0 50px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #95cb60;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: rgb(98, 135, 61);
+    }
+  }
+  /* / Contact Us */
+
+  /* About Us */
+  &__about-us-row {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    color: #fff;
+    background: linear-gradient(
+                    rgba(34, 132, 110, .85),
+                    rgba(34, 132, 110, .85)
+    ),
+    url("../../img/landing-layout__bg-2.jpg") no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &__about-us-title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+
+    &--big {
+      margin-bottom: 50px;
+      font-size: 48px;
+    }
+  }
+
+  &__about-us-text {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  &__about-us-btn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: rgb(103, 140, 66);
+    }
+  }
+  /* / About Us */
+
+  /* Our Brands */
+  &__our-brands-row {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    min-height: 300px;
+    background-color: #fff;
+  }
+
+  &__our-brands-title {
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+  }
+
+  &__our-brand {
+    width: 32%;
+    max-width: 320px;
+    height: 160px;
+
+    &--1 {
+      background: url("../../img/brand-1.png") 50% 50% no-repeat;
+      background-size: contain;
+    }
+
+    &--2 {
+      background: url("../../img/brand-2.png") 50% 50% no-repeat;
+      background-size: contain;
+    }
+
+    &--3 {
+      background: url("../../img/xymogen-logo.jpg") 50% 50% no-repeat;
+      background-size: contain;
+      height: 210px;
+    }
+  }
+  /* / Our Brands */
+
+  /* Register Block */
+  &__register-row {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    color: #fff;
+    background: linear-gradient(
+                    rgba(34, 132, 110, .85),
+                    rgba(34, 132, 110, .85)
+    ),
+    url("../../img/landing-layout__bg-3.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  &__register-title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__register-text {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__register-btn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+  }
+
+  &__register-btn:hover {
+    color: rgb(103, 140, 66);
+  }
+  /* / Register Block */
+
+  /* Info Blocks */
+  &__info-blocks-row {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 225px;
+    margin-right: 25px;
+    padding: 40px 0;
+
+    &:hover {
+      .landing-layout__info-block-icon {
+        background-color: rgb(98, 135, 61);
+      }
+    }
+  }
+
+  &__info-block:last-of-type {
+    margin-left: 0;
+  }
+
+  &__info-block-title {
+    margin: 0;
+    text-align: center;
+    line-height: 42px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  &__info-block-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #95cb60;
+
+    transition: all .2s ease-in-out;
+
+    i {
+      display: block;
+      width: 100%;
+      line-height: 100px;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 50px;
+      color: #fff;
+    }
+
+    &--faq {
+      i {
+        font-size: 60px;
+      }
+    }
+  }
+  /* / Info Blocks */
+
+  /*============
+      Footer
+  ============*/
+  .landing-layout-footer {
+    background-color: #4d4c4c;
+
+    &__contact-info-list {
+      margin-bottom: 25px;
+    }
+
+    &__links-list,
+    &__contact-info-list,
+    &__social-buttons-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    &__links-title,
+    &__contact-info-title,
+    &__contact-us-title {
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    /* Top Row */
+    &__top-row {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    &__links-item,
+    &__contact-info-list-item {
+      margin-bottom: 5px;
+    }
+
+    &__link {
+      font-size: 14px;
+      font-weight: 700;
+      color: #95cb60;
+      cursor: pointer;
+
+      transition: all .1s ease-in-out;
+
+      &:hover {
+        color: rgb(98, 135, 61);
+      }
+
+      &--contact-us {
+        display: none;
+      }
+    }
+
+    &__contact-info-list-item {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    &__contact-us-form {
+      width: 320px;
+    }
+
+    &__contact-us-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    &__contact-us-input,
+    &__contact-us-textarea {
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, .33);
+    }
+
+    &__contact-us-input {
+      width: 150px;
+      height: 30px;
+      padding: 0 10px;
+      outline: none;
+    }
+
+    &__contact-us-textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 5px 10px;
+      outline: none;
+    }
+
+    &__contact-us-send-btn {
+      width: 110px;
+      height: 40px;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #95cb60;
+      cursor: pointer;
+
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        color: #fff;
+        background-color: rgb(98, 135, 61);
+      }
+    }
+    /* / Top Row */
+
+    /* Bottom Row */
+    &__bottom-row {
+      display: flex;
+      justify-content: center;
+      min-height: 70px;
+      border-top: 1px solid #979797;
+      text-align: center;
+
+      .landing-layout__container {
+        margin-top: 5px;
+      }
+    }
+
+    &__copyright-text {
+      margin: 0;
+      font-size: 12px;
+      color: #fff;
+      display: block;
+      width: 100%;
+      align-self: center;
+    }
+
+    &__social-buttons-list {
+      display: flex;
+      margin: 0;
+    }
+
+    &__social-buttons-list-item {
+      margin-right: 10px;
+    }
+
+    &__social-buttons-list-item:last-of-type {
+      margin-right: 0;
+    }
+
+    &__social-btn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #353535;
+
+      transition: all .2s ease-in-out;
+    }
+    /* / Bottom Row */
+  }
+  /*==========
+    / Footer
+  ==========*/
+
+  .phone-feedback {
+    width: 100% !important;
+  }
+}
+
+/*=================
+    Media Rules
+=================*/
+/* Small width desktop screens */
+@media all and (max-width: 900px) {
+
+  .landing-layout-header {
+
+    &__call-us-block,
+    &__email {
+      margin-right: 10px;
+    }
+
+    &__bottom-row {
+      .landing-layout__container {
+        flex-direction: column;
+      }
+    }
+
+    &__main-logo {
+      margin: 10px 0;
+    }
+
+    &__search {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      width: 50%;
+    }
+
+    &__main-menu {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%
+    }
+  }
+
+  .landing-layout {
+    .landing-layout-header {
+      position: inherit;
+    }
+
+    .main-container {
+      margin-top: 0;
+    }
+
+    .landing-signup-page {
+      margin-top: 0;
+    }
+  }
+}
+
+/* / Small width desktop screens */
+
+/* Tablets */
+@media all and (max-width: 800px) {
+  .landing-layout {
+
+    /* Header */
+    .landing-layout-header {
+      &__top-row .landing-layout__container {
+        flex-direction: column;
+      }
+
+      &__login-block {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      &__main-logo {
+        width: 50%;
+      }
+
+      &__search {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      &__main-menu-link {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        &--current::after {
+          left: 15px;
+          right: 15px;
+        }
+      }
+    }
+    /* / Header */
+
+    /* About Us */
+    &__about-us-row {
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    &__about-us-btn {
+      width: 50%;
+    }
+    /* / About Us */
+
+    /* Register Block */
+    &__register-row {
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    &__register-btn {
+      width: 50%;
+    }
+    /* / Register Block */
+  }
+}
+
+/* / Tablets */
+
+/* Small Tablets & Phones */
+@media all and (max-width: 659px) {
+  body {
+    margin-top: 0 !important;
+
+    .landing-layout {
+
+      /* Header */
+      .landing-layout-header {
+        .landing-layout__top-row {
+          padding: 10px 0;
+        }
+
+        &__login-block {
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        &__login-block input,
+        .form-group,
+        &__go-btn {
+          display: inline-block !important;
+          margin-right: 0 !important;
+          margin-bottom: 5px;
+          width: 100% !important;
+          max-width: 400px;
+        }
+
+        &__go-btn {
+          margin-bottom: 0;
+        }
+
+        &__search {
+          width: 100% !important;
+        }
+
+        &__main-menu-link {
+          padding-right: 6px;
+          padding-left: 6px;
+
+          &--current::after {
+            left: 6px;
+            right: 6px;
+          }
+        }
+      }
+      /* / Header */
+
+      /* Slider */
+      &__slide-btn {
+        width: 100%;
+      }
+      /* / Slider */
+
+      /* Contact Us */
+      &__contact-us-row {
+        flex-direction: column;
+        padding: 0 10px;
+
+        .landing-layout__container {
+          flex-direction: column;
+        }
+      }
+
+      &__contact-us-information-block {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      &__contact-us-btn {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+      }
+      /* / Contact Us */
+
+      /* About Us */
+      &__about-us-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+
+        &--big {
+          font-size: 40px;
+        }
+      }
+
+      &__about-us-btn {
+        width: 100%;
+        max-width: 400px;
+      }
+      /* / About Us */
+
+      /* Our Brands */
+      &__our-brands-row {
+        padding: 10px 0;
+
+        .landing-layout__container {
+          flex-direction: column;
+        }
+      }
+
+      &__our-brand {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+
+        &:last-of-type {
+          height: 160px;
+          margin-bottom: 0;
+        }
+      }
+      /* / Our Brands */
+
+      /* Register Block */
+      &__register-title {
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
+
+      &__register-text {
+        font-size: 20px;
+      }
+
+      &__register-btn {
+        width: 100%;
+        max-width: 400px;
+      }
+      /* / Register Block */
+
+      /* Info Blocks */
+      &__info-blocks-row {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+      }
+
+      &__info-block {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+      }
+      /* / Info Blocks */
+
+      /* Footer */
+      .landing-layout-footer {
+
+        .landing-layout__container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__top-row {
+          margin-bottom: 20px;
+        }
+
+        &__links-block {
+          width: 100%;
+        }
+
+        &__links-title {
+          text-align: center;
+        }
+
+        &__links-list {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__links-item {
+          text-align: center;
+        }
+
+        &__link {
+          padding: 0 5px;
+
+          &--contact-us {
+            display: inline;
+          }
+        }
+
+        &__contact-info-block {
+          width: 100%;
+          text-align: center;
+        }
+
+        &__contact-us-title {
+          text-align: center;
+        }
+
+        &__contact-us-form {
+          width: 100%;
+          align-items: center;
+        }
+
+        &__contact-us-input {
+          width: 49%;
+        }
+
+        &__contact-us-send-btn {
+          display: block;
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        &__bottom-row {
+          .landing-layout__container {
+            padding: 10px 0;
+          }
+        }
+
+        &__copyright-text {
+          order: 1;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* / Small Tablets & Phones */

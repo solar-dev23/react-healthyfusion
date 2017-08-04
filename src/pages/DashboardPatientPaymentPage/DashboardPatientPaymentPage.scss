@@ -1,0 +1,255 @@
+.dashboard-Providers-form-modal-component {
+  .circle
+  {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background: #ddd;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    float: left;
+    position: relative;
+  }
+  .divstylelabel{
+    padding: 15px;
+    height: 50px;
+    width: 90%;
+    background-color: #F5EC75;
+    border: 1px solid #C3B935;
+  }
+
+  h3, .h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 100px;
+    align:center;
+  }
+  .mainDiv
+  {
+    height: 170px;
+    width: 100%;
+    padding-left: 200px;
+  }
+  .subDiv
+  {
+    float:left;
+    width:290px;
+    position: relative;
+  }
+  .subdivHeaderlabel
+  {
+    padding-bottom: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+  }
+  .myProgress
+  {
+    position: relative;
+    width: 200px;
+    height: 10px;
+    top: 45px;
+    background-color: #ddd;
+  }
+
+  .myBar
+  {
+    position: absolute;
+    height: 100%;
+    background-color: #4CAF50;
+  }
+  .myBar1
+  {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: #4CAF50;
+  }
+  .circleTab1
+  {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background: #3CA8E0;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    float: left;
+    position: relative;
+  }
+  .progressdiv
+  {
+    width:100%;
+    float:left;
+    position: relative;
+  }
+  .subdivHeaderlabel1
+  {
+    padding-bottom: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 25px;
+    position: relative;
+  }
+  .inner-addon
+  {
+    position: relative;
+  }
+  .inner-addon .fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+  }
+  .left-addon .fa
+  {
+    left:  0px;
+    padding-top: 17px;
+  }
+  .left-addon input
+  {
+    padding-left:  30px;
+  }
+  .left-addon select
+  {
+    padding-left:  30px;
+  }
+  .left-addon DatePicker
+  {
+    padding-left:  30px;
+  }
+  .formDiv
+  {
+    padding: 10px;
+    padding-left: 40px;
+  }
+  .contentDiv
+  {
+    padding-left: 50px;
+    padding-top: 30px;
+    float: left;
+  }
+  .formMain
+  {
+    padding-left: 15%;
+    padding-top: 5%;
+    float: left;
+  }
+  .maincontent
+  {
+    width:70%;
+    min-height:300px;
+    float:left;
+    border-right: 1px solid #E1E1E1;
+  }
+  .forminput
+  {
+    width: 550px;
+    height: 40px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+  }
+  .buttons-container11
+  {
+    text-align: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    float: right;
+    padding-top:50px;
+  }
+  .hrule
+  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+  }
+  .AddButton
+  {
+    float:left;
+    margin-left:5px
+  }
+
+  .addressdiv
+  {
+    margin: 2px;
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    float: left;
+    border: 2px solid #3CA8E0;
+    border-radius: 5px;
+    color: #3CA8E0;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    margin-top: 16px;
+    border: 1px solid #2398DC;
+    -webkit-appearance: none;
+    -webkit-transition: box-shadow 200ms;
+    -ms-transform: scale(3); /* IE */
+    -moz-transform: scale(3); /* FF */
+    -webkit-transform: scale(3); /* Safari and Chrome */
+    -o-transform: scale(3); /* Opera */
+  }
+  input[type="checkbox"] {
+    -webkit-border-radius:2px;
+    border-radius:2px;
+  }
+  input[type="checkbox"]:not(:disabled):hover {
+    border-color:#2398DC;
+  }
+
+  input[type="checkbox"]:focus {
+    outline:none;
+  }
+  input[type="checkbox"]:checked {
+    border-color:#2398DC;
+    background-color: #2398DC;
+    padding: 1px;
+  }
+  input[type="checkbox"]:checked:before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-left: 4px;
+    margin-top: 1px;
+  }
+  .CheckPaymentDiv {
+    float: right;
+    width: 29%;
+    height: 280px;
+    border: 1px solid #C9C4C4;
+    border-radius: 7px;
+  }
+  .checkpaneldiv
+  {
+    float: left;
+    width: 100%;
+    padding: 20px;
+  }
+  .payformlabel
+  {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+  }
+}

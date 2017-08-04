@@ -1,0 +1,172 @@
+.dashboard-patients-page {
+  margin: 1.5rem;
+
+  .add-new-patient {
+    display: block;
+    margin-bottom: 1em;
+
+    button {
+      font-size: 14px;
+      color: #333;
+      background-color: #fff;
+      border-radius: 3px;
+      border: solid 1px #4a4a4a;
+      padding: 0.5em 1em;
+      background-color: #fff;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .sort-list {
+    cursor: pointer;
+
+    i {
+      color: #fff;
+      display: block;
+      height: 10px;
+    }
+  }
+
+  table {
+    width: 100%;
+
+    td {
+      border-collapse: collapse;
+      padding: 0.7rem;
+      font-size: 14px;
+      cursor: pointer;
+
+    }
+
+    thead {
+      color: #fff;
+      font-weight: bold;
+      border-bottom: none;
+      background-color: #4a4a4a;
+
+      td {
+        width: 10%;
+      }
+
+      .td-title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      i {
+        color: #8d919c;
+        right: 1rem;
+        vertical-align: middle;
+
+      }
+    }
+    tbody {
+      height: auto;
+      overflow: auto;
+
+      .tr-1, .tr-2 {
+        color: #4a4a4a;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .tr-1 {
+        background-color: #fff;
+      }
+
+      .tr-2 {
+        background-color: #f4f4f4;
+      }
+
+      .tr-1, .tr-2{
+        &:hover {
+          background: #cedbef;
+          color: rgb(118, 118, 118);
+        }
+
+        &.active {
+          background-color: #a0c7f4;
+          color: #333333;
+        }
+      }
+    }
+  }
+
+  .patient-details-modal {
+    .modal-container {
+      font-size: 12px;
+      color: #767676;
+      font-weight: 700;
+
+      .col-sm-6 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .patient-information {
+    .titel-information {
+      padding-bottom: 0;
+
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #555;
+        margin: 0.5em 0;
+      }
+    }
+  }
+
+  .patient-detail, .patient-information {
+    background-color: #e4ecf5;
+
+    tr {
+      td {
+        padding: 2em;
+      }
+    }
+  }
+
+  .patient-detail {
+
+    .personal-info {
+      h4 {
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    }
+
+    .address-info, .state-info {
+      padding: 1em 0 0;
+    }
+
+    tr {
+      td {
+        h4 {
+          font-size: 16px;
+          font-weight: 800;
+          text-align: center;
+          color: #555;
+        }
+
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+
+    .edit-button {
+      border-radius: 3px;
+      background-color: #4a4a4a;
+      color: #fff;
+      padding: 0.5em 1em;
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+  }
+}

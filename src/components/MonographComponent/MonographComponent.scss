@@ -1,0 +1,137 @@
+.monograph-component {
+  .monograph-overview {
+    margin-bottom: 1em;
+  }
+
+.monograph-item-block {
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    cursor: pointer;
+    list-style: circle;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 3px;
+  }
+  
+.monograph-item-block:hover
+{
+    background-color: #e5e5e5;
+}
+.monograph-item-block:focus
+{
+    background-color: #2D440A;
+    color: #fff;
+}
+.headerlabel
+{
+    font-size: 28px;
+    color: #00b2e2;
+    font-weight: normal;
+}
+.contentbox
+{
+    border: solid 1px #e3e3e3;
+    height: auto;   
+    font-size: 15px;
+}
+
+  .related-products,  {
+    h4 {
+      font-family: Open Sans, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #333;
+    }
+  }
+
+  .underProduct {
+    text-align: center;
+
+    .buy-product-button {
+      background-color: #fff;
+      border-radius: 3px;
+      border: solid 1px #4a4a4a;
+      padding: 5px 15px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .fa-shopping-cart {
+      margin-right: 0.5rem;
+    }
+
+    .btn-style {
+      background-color: #95cb60;
+    }
+  }
+}
+.accordion{
+        height:100%;
+        postion:absolute;
+        overflow:hidden;
+        padding-top:40px;   
+        padding-bottom:40px;   
+    }
+
+   //collpsible component
+
+  // The main container element
+.Collapsible {
+  background-color: #AFC4B1;
+}
+
+
+//The content within the collaspable area
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 1px solid #F5F3F3;
+  border-top: 0;
+  color: black;
+  background: #f7f7f7;
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//The link which when clicked opens the collapsable area
+.Collapsible__trigger {
+    display: block;
+  font-weight: 400;
+  text-decoration: none; 
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+  background: #46946d;
+  color: white;
+  cursor:pointer;
+  font-size: 16px;
+
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+}
+

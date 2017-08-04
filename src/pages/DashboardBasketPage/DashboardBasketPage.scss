@@ -1,0 +1,124 @@
+.dashboard-basket-page {
+  padding: 0 35px;
+
+  &__recommended-products-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-left: 15px;
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+  }
+
+  &__recommended-products-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1450px;
+    padding: 0;
+  }
+
+  &__recommended-products-item {
+
+    .product-card {
+      width: 260px;
+      height: 450px;
+      margin: 15px;
+      padding: 15px 20px;
+      border: 1px solid #e3e3e3;
+      color: #333;
+
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__product-name {
+        font-size: 16px;
+      }
+
+      &__product-price {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      &__add-to-cart-btn {
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 30px);
+        margin: 15px;
+        border: 1px solid #4a4a4a;
+        font-size: 14px;
+        color: #4a4a4a;
+        background-color: #fff;
+
+        &:hover {
+          color: #fff;
+          background-color: #4a4a4a;
+        }
+
+        i {
+          margin-right: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1539px) {
+  .dashboard-basket-page {
+
+    &__recommended-products-list {
+      width: calc(290px * 4);
+    }
+  }
+}
+
+@media all and (max-width: 1249px) {
+  .dashboard-basket-page {
+
+    &__recommended-products-list {
+      width: calc(290px * 3);
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .dashboard-basket-page {
+    &__title {
+      margin: 0;
+    }
+  }
+}
+
+@media all and (max-width: 959px) {
+  .dashboard-basket-page {
+
+    &__recommended-products-list {
+      width: calc(290px * 2);
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .dashboard-basket-page {
+    padding: 0 15px;
+  }
+}
+
+@media all and (max-width: 599px) {
+  .dashboard-basket-page {
+
+    &__recommended-products-list {
+      width: 290px;
+    }
+  }
+}

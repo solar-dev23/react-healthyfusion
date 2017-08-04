@@ -1,0 +1,84 @@
+.dashboard-Handout-page {
+  margin: 1.5rem;
+
+
+  table {
+    width: 100%;
+
+    td {
+      border-collapse: collapse;
+      border: 1px solid #C8CCD7;
+      padding: 0.7rem;
+      font-size: 14px;
+
+    }
+
+    thead {
+      color: #fff;
+      font-weight: bold;
+      background-color: #aec785;
+      border-bottom: none;
+
+      td {
+        width: 10%;
+      }
+
+      .td-title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      i {
+        color: #8d919c;
+        right: 1rem;
+        vertical-align: middle;
+
+      }
+    }
+    tbody {
+      height: 400px;
+      overflow: auto;
+
+      .tr-1 {
+        color: #2B795A;
+        background-color: #fff;
+      }
+
+      .tr-2 {
+        color: rgb(118, 118, 118);
+        background-color: #f1f2f7;
+      }
+
+      .tr-1, .tr-2{
+        &:hover {
+          background: #cedbef;
+          color: rgb(118, 118, 118);
+        }
+
+        &.active {
+          background-color: #00A8B3;
+          border-color: #00A8B3;
+          color: #FFFFFF;
+
+          &:hover {
+            background-color: lighten(#00A8B3, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  .patient-details-modal {
+    .modal-container {
+      font-size: 12px;
+      color: #767676;
+      font-weight: 700;
+
+      .col-sm-6 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

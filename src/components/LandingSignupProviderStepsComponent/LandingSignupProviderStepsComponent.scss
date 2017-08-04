@@ -1,0 +1,67 @@
+.landing-signup-provider-steps-component {
+  .step-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em 0;
+
+    .active-step {
+      p, i {
+        color: #7ca84f !important;
+      }
+    }
+
+    .confirmed-step {
+      .fa-check {
+        display: inline-flex !important;
+      }
+    }
+
+    .step-part {
+      position: relative;
+      text-align: center;
+      width: 100px;
+
+      i {
+        font-size: 40px;
+        margin: 5px 0;
+      }
+
+      p {
+        font-size: 14px;
+        color: #333;
+      }
+
+      :first-child {
+        font-weight: 800;
+      }
+
+      .fa-check {
+        position: absolute;
+        font-size: 20px;
+        margin: 0;
+        display: none;
+        width: 50px;
+      }
+    }
+
+    .between {
+      display: block;
+      border: solid 1px #999;
+      width: 20px;
+      align-self: center;
+      margin: 0 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-signup-provider-steps-component {
+    .step-block {
+      .between {
+        display: none;
+      }
+    }
+  }
+}

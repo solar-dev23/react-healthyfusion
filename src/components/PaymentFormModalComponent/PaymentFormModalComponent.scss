@@ -1,0 +1,65 @@
+.dashboard-pay-form-modal-component {
+  label {
+    display: block;
+    color: #767676;
+
+    & > div {
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      font-weight: normal;
+    }
+  }
+
+  .col-sm-6 {
+    margin-bottom: 15px;
+  }
+
+  input[type='password'] {
+    display: block;
+    width: 100%;
+  }
+
+  .buttons-container {
+    margin-top: 15px;
+    text-align: right;
+  }
+
+  .error {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #b81d1d;
+  }
+
+  .success {
+    margin-bottom: 15px;
+    color: #25ab4b;
+  }
+  .date-picker {
+  position: relative;
+}
+
+.react-datepicker {
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  font-size: 14px;
+  border: none;
+
+  .react-datepicker__header {
+    background-color: #FFF;
+    border-bottom: none;
+  }
+
+  .react-datepicker__current-month {
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #767676;
+  }
+
+  .react-datepicker__day-name, .react-datepicker__day {
+    width: 30px;
+    font-weight: 300;
+  }
+}
+}

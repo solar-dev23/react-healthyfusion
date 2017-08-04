@@ -1,0 +1,49 @@
+.user-block__basket-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 35px;
+  padding: 8px 15px;
+  background-color: #95cb60;
+
+  &:hover {
+    background-color: #6f9647;
+  }
+
+  &::before {
+    font-size: 20px;
+  }
+
+  .user-block__basket-btn-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21px;
+    width: auto;
+    min-width: 21px;
+    margin-left: 10px;
+    padding: 0 2px;
+    border-radius: 10px;
+    line-height: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #547336;
+  }
+
+  label {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    line-height: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+  }
+}

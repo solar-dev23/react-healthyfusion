@@ -1,0 +1,14 @@
+.patient-form-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width: 500px) {
+  .patient-form-modal {
+    .modal-component {
+      &__row {
+        flex-direction: column;
+      }
+    }
+  }
+}

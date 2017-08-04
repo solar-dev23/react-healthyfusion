@@ -1,0 +1,191 @@
+.dashboard-account-page {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 30px 50px;
+
+  &__wrapper {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-grow: 1;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__title {
+    margin: 0 20px 30px 0;
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+  }
+
+  .dashboard-account-provider-info-component,
+  .dashboard-account-prof-info-component,
+  .dashboard-account-patient-info {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+
+      &--left {
+        margin-right: 20px;
+      }
+
+      &--right {
+        flex-grow: 1;
+      }
+    }
+
+    &__label {
+      line-height: 1.9;
+      font-size: 16px;
+      color: #777;
+    }
+
+    &__info {
+      line-height: 1.9;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+
+  &__edit-btn {
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #4a4a4a;
+  }
+
+  &__add-document-btn {
+    flex-grow: 1;
+    max-width: 160px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+    border: solid 1px #4a4a4a;
+
+      &:hover {
+        opacity: 0.8;
+      }
+  }
+
+  .dashboard-account-patient-info-component {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__tabs {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  &__tab {
+    width: 78px;
+    height: 35px;
+    font-size: 16px;
+    color: #111;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &--current,
+    &:hover {
+      position: relative;
+      font-weight: bold;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #4a4a4a;
+      }
+    }
+
+    &--current {
+      cursor: default;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .dashboard-account-page {
+    flex-direction: column;
+    align-items: center;
+
+    &__block {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    &__wrapper {
+      margin-bottom: 50px;
+    }
+
+    .dashboard-account-patient-info-component {
+      flex-direction: column;
+    }
+
+    .dashboard-account-provider-info-component,
+    .dashboard-account-prof-info-component,
+    .dashboard-account-patient-info {
+      &__col {
+        align-content: stretch;
+      }
+    }
+
+    .dashboard-account-patient-info-component {
+      .dashboard-account-page__block:not(:last-of-type) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__edit-btn {
+      margin-top: auto;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .dashboard-account-page {
+    padding: 30px 15px;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__block {
+      margin-right: 0 !important;
+
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

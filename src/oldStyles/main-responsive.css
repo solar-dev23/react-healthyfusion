@@ -1,0 +1,229 @@
+@media (min-width: 980px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 980px) and (max-width: 1095px){
+   .Link.logo {
+      margin: 13px 10px 0 15px;
+      width: 200px;
+    }
+    .brand {
+      width: 214px;
+    }
+    .horizontal-menu .navbar-nav>li>a.header-btn.blue {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .horizontal-menu .navbar-nav>li {
+      margin-right: 7px !important;
+    }
+    .horizontal-menu .navbar-nav>li>a>.Icon {
+      margin-right: 5px !important;
+    }
+    ul.top-menu {
+        margin-right: 5px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 783px) {
+
+    .horizontal-menu .navbar-nav>li {
+      margin-right: 7px !important;
+    }
+    .horizontal-menu .navbar-nav>li>a>.Icon {
+      margin-right: 5px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .brand {
+      border-bottom: 1px solid rgba(78, 166, 155, 0.15);
+      width: 100%;
+    }
+
+    .horizontal-menu.navbar-collapse.collapse {
+        margin-top:10px;
+        padding-right: 0;
+    }
+
+    li.devider-v, li.separator-v, i.devider-v {
+      margin-top: -10px;
+      height: 54px;
+      margin-right: 10px !important;
+    }
+    .horizontal-menu .navbar-nav>li {
+      margin-right: 10px;
+    }
+
+    li.devider-v:first-of-type {
+        display: none;
+    }
+
+    ul.top-menu {
+        margin-right:0;
+        margin-bottom: 0;
+    }
+
+    .UserBar.top-nav {
+      margin-top: 10px;
+      float: right;
+    }
+
+    .company-collapse-box {
+        margin-top: 10px;
+    }
+
+    .company-menu {
+        padding-left: 15px !important;
+    }
+
+    .company-menu>h2 {
+        display: block;
+        text-align: center;
+        float:none !important;
+    }
+
+    .company-menu .send-license-btn {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+}
+
+@media (max-width: 767px)  and  (min-width: 480px){
+
+    .header {
+          margin-top: 70px ! important;
+    }
+
+    .hr-toggle {
+        margin-top: -50px;
+    }
+
+
+    .horizontal-menu .navbar-nav>li {
+        margin-right: 10px;
+    }
+
+    li.devider-v, li.separator-v {
+      margin-right: 10px !important;
+    }
+
+    .horizontal-menu .navbar-nav>li {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .top-nav {
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .show-when-small-screen {
+        display: inline-block;
+        float:left;
+    }
+
+    .hide-when-small-screen {
+        display: none;
+    }
+
+    .cost-destr-value {
+        display: inline-block;
+        float: right;
+    }
+
+    .hide-left-bar {
+        margin-left: 0px!important;
+    }
+    #sidebar {
+        margin-left: -280px;
+    }
+    .brand {
+        width: 100%;
+    }
+    .wrapper {
+        margin-top: 0px;
+    }
+    #main-content {
+        margin-left: 0px;
+    }
+    .col.m-b:last-of-type{
+        margin-bottom:0;
+    }
+    .col-xs-6:nth-child(2n){
+        padding-left: 0;
+    }
+    .col-xs-12{
+        padding-right: 15px;
+    }
+
+    .CompanyMenu.horizontal-menu {
+        margin-top: 0;
+    }
+
+    li.devider-v, li.separator-v {
+      /*width: 100%;
+      height: 2px;
+      border-bottom: 1px solid #DDD;
+      margin-top: 0;*/
+
+      display: none;
+    }
+
+
+    /*li.devider-v:first-of-type, li.separator-v:first-of-type{
+        display: none;
+    }*/
+
+    .horizontal-menu .navbar-nav>li>a:not(.header-btn):after {
+        left:0;
+    }
+
+    .horizontal-menu .navbar-nav>li>a:not(.header-btn):hover:after,
+    .horizontal-menu .navbar-nav>li.active>a:not(.header-btn):after {
+        width:100%;
+    }
+
+    .brand {
+        border-bottom: 1px solid #DDD;
+    }
+
+    .horizontal-menu .navbar-nav>li {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .company-menu {
+        padding-left: 15px !important;
+    }
+
+    .company-menu>h2 {
+        display: block;
+        text-align: center;
+        float:none !important;
+    }
+
+    .company-menu .navbar-toggle {
+        margin-top:-30px;
+    }
+}
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 980px) {
+    .Section.wrapper {
+      margin-top: 122px;
+    }
+}
+
+
+@media (min-width: 981px) {
+
+}

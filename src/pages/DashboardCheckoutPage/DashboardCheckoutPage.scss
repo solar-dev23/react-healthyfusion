@@ -1,0 +1,239 @@
+.dashboard-checkout-page {
+  display: flex;
+  padding: 20px 50px;
+
+  .checkout-products-table {
+    width: calc(50% - 50px);
+    margin-right: 20px;
+
+    &__header {
+
+      .checkout-products-table__row {
+        height: 40px;
+        background-color: #4a4a4a;
+
+        .checkout-products-table__cell {
+          color: #fff;
+        }
+      }
+    }
+
+    &__body {
+
+      .checkout-products-table__row {
+        height: 90px;
+
+        &:nth-child(even) {
+          background-color: #f4f4f4;
+        }
+
+        .checkout-products-table__cell {
+          color: #333;
+        }
+      }
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    &__cell {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 20px;
+      font-size: 16px;
+      font-weight: bold;
+
+      &--price {
+        flex-shrink: 0;
+        width: 100px;
+        margin-left: auto;
+      }
+
+      &--quantity {
+        flex-shrink: 0;
+        width: 100px;
+      }
+
+      &--total {
+        flex-shrink: 0;
+        width: 100px;
+
+        i {
+          margin-left: 5px;
+
+          &:hover {
+            color: #FF8633;
+          }
+        }
+      }
+    }
+
+    &__product-img {
+      height: 50%;
+      margin-right: 15px;
+    }
+
+    &__quantity-input {
+      width: 100%;
+      height: 28px;
+      padding: 0 5px 0 10px;
+      border: 1px solid #979797;
+      border-radius: 3px;
+      color: #555;
+      background-color: #fff;
+      outline: none;
+    }
+  }
+
+  .checkout-summary {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 50px);
+    margin-left: auto;
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      line-height: 40px;
+      font-size: 24px;
+      font-weight: normal;
+      color: #333;
+    }
+
+    &__row {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #ababab;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+
+      &--total {
+        border: none;
+        font-size: 24px;
+        color: #333;
+      }
+    }
+
+    &__col {
+      display: flex;
+      padding: 0 20px;
+
+      &--left {
+        flex-grow: 1;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      max-width: 180px;
+      height: 35px;
+      border-radius: 3px;
+      font-size: 14px;
+      cursor: pointer;
+
+      &--keep-shopping,
+      &--clear-cart {
+        margin-right: 10px;
+        border: 1px solid #4a4a4a;
+        color: #4a4a4a;
+
+        &:hover {
+          color: #fff;
+          background-color: #4a4a4a;
+        }
+      }
+
+      &--checkout {
+        margin-left: auto;
+        border: none;
+        font-weight: bold;
+        color: #fff;
+        background-color: #95cb60;
+
+        &:hover {
+          background-color: darken(#95cb60, 10%);
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .dashboard-checkout-page {
+    flex-direction: column;
+
+    .checkout-products-table {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .checkout-summary {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .dashboard-checkout-page {
+    padding: 0 15px 15px 15px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .dashboard-checkout-page {
+    padding: 0 0 15px 0;
+
+    .checkout-products-table {
+
+      &__cell {
+        padding: 0 10px;
+        font-size: 12px;
+
+        &--price {
+          width: 60px;
+        }
+
+        &--quantity {
+          width: 80px;
+        }
+
+        &--total {
+          justify-content: flex-end;
+          width: 60px;
+
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .checkout-summary {
+      padding: 0 10px;
+
+      &__buttons {
+        flex-direction: column;
+      }
+
+      &__btn {
+        width: 100%;
+        max-width: none;
+        margin: 0 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.dashboard-component, #client-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  .btn-success {
+    background-color: #4e2c71;
+    border-radius: 3px;
+    border: none;
+    padding: 0.5em 1em;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .Section.wrapper {
+    margin-top: 0;
+    padding: 0;
+
+    .SectionHeader {
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 20px;
+
+
+      &::before {
+        display: none;
+      }
+
+      .pull-right:first-child {
+        margin-left: auto;
+      }
+
+      .btn-style-Header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        color: #fff;
+        background-color: #95cb60;
+
+        &:hover {
+          background-color: lighten(#95cb60, 5%);
+        }
+
+        &::before {
+          margin-right: 5px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .row {
+    margin: 0;
+
+    .panel-heading {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding: 0 50px;
+      font-size: 16px;
+      font-weight: 300;
+      background: linear-gradient(to left, #e4ddef, #d0e6ff);
+      color: #333;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.dashboard-component {
+  .form-group input, .form-group label, .form-control {
+    width: 100% !important;
+  }
+
+  .pull-right {
+    .btn {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .dashboard-component {
+    .row {
+      .panel-heading {
+        padding: 0 15px !important;
+
+        .btn:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

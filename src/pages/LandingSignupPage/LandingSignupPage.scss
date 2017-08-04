@@ -1,0 +1,296 @@
+.landing-signup-page {
+  flex: 1;
+  height: 100%;
+  background-color: #fff;
+
+  input {
+    box-shadow: none;
+  }
+
+  .signup-patient-form, .signup-provider-form {
+    width: 700px;
+    margin: 1em auto;
+    padding: 1em;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .registration-title {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .verify-errors {
+    margin-bottom: 0.5em;
+  }
+
+  .check-registration {
+    flex-direction: column !important;
+
+    .form-group {
+      display: inline-block;
+
+      label, input {
+        vertical-align: middle;
+        display: inline-block;
+        width: auto !important;
+        margin: 0 0.5em 0 0 !important;
+      }
+    }
+  }
+
+  .section-registration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .form-group {
+      input {
+        label {
+          color: #333;
+          font-weight: 800;
+          display: block;
+        }
+      }
+
+      input {
+        border-radius: 3px;
+        border: solid 1px #979797;
+        width: 100%;
+        padding: 0.5em 1em;
+        color: #393636;
+      }
+    }
+
+    .form-group-select {
+      margin-bottom: 0.5em;
+
+      label {
+        display: block;
+      }
+
+      select {
+        padding: 0.5em;
+        width: 100%;
+        border-radius: 3px;
+        font-size: 12px;
+
+        option {
+          background-color: #e3e3e6;
+        }
+      }
+    }
+
+    .date-picker-block {
+      .date-picker {
+        margin-top: 0.5em;
+
+        input {
+          padding: 0.5em;
+        }
+      }
+    }
+
+    .form-group, .form-group-select, .date-picker-block {
+      flex: 1;
+      margin-right: 1em;
+    }
+  }
+
+  .secure-block {
+    flex: 1;
+    margin-right: 1em;
+
+    .form-group {
+      input {
+        width: 30% !important;
+      }
+    }
+  }
+
+  .verify-block {
+    text-align: right;
+    margin-right: 1em;
+
+    .green-button {
+      background-color: #95cb60;
+      border: 1px solid #95cb60;
+    }
+
+    .black-button {
+      background-color: #4a4a4a;
+      border: 1px solid #4a4a4a;
+    }
+
+    .black-button, .green-button {
+      width: auto;
+      padding: 0.5em 2em;
+      border-radius: 3px;
+      color: #fff;
+      margin-left: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .gratitude-privacy {
+    height: auto;
+  }
+
+  .general-privacy, .gratitude-privacy {
+    width: 750px;
+    margin: 0 auto;
+    padding: 1em;
+
+    .privacy-title, .gratitude-title {
+      font-size: 18px;
+      text-align: left;
+      color: #333;
+    }
+
+    .privacy-header, .gratitude-header {
+      color: #555;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .privacy-information, .gratitude-information {
+      font-size: 14px;
+      line-height: 1.5;
+      height: 40vh;
+      overflow: auto;
+      margin-right: 1em;
+    }
+
+    //radio buttons styles
+    .form-group {
+      margin: 1em 0;
+
+      input {
+        width: auto;
+        vertical-align: middle;
+        margin: 0 0.5em;
+      }
+    }
+  }
+
+  .landing-signup-patient-component {
+    .signup-patient-form {
+      .referral-block {
+        label {
+          display: block;
+        }
+
+        input {
+          width: 50%;
+        }
+      }
+    }
+
+    .step-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 1em 0;
+
+      .active-step {
+        p, i {
+          color: #7ca84f !important;
+        }
+      }
+
+      .confirmed-step {
+        .fa-check {
+          display: inline-flex !important;
+        }
+      }
+
+      .step-1, .step-2 {
+        position: relative;
+        text-align: center;
+
+        i {
+          font-size: 40px;
+          margin: 5px 0;
+        }
+
+        p {
+          font-size: 14px;
+          color: #333;
+        }
+
+        :first-child {
+          font-weight: 800;
+        }
+
+        .fa-check {
+          position: absolute;
+          font-size: 20px;
+          margin: 0;
+          display: none;
+          width: 50px;
+        }
+      }
+
+      .between {
+        display: block;
+        border: solid 1px #999;
+        width: 30px;
+        align-self: center;
+        margin: 0 3em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-signup-page {
+    .general-privacy {
+      width: 100%;
+    }
+
+    .landing-signup-patient-component, .landing-signup-provider-component {
+      .signup-patient-form, .signup-provider-form, .general-privacy, .gratitude-privacy {
+        width: 100%;
+        margin: 0;
+
+        .section-registration {
+          flex-direction: column;
+        }
+
+        .billing-block {
+          width: 100%;
+        }
+
+        .column-fields {
+          flex-direction: column;
+
+          .section-1, .section-2 {
+            div {
+              label {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .verify-block {
+          display: flex;
+          justify-content: space-between;
+
+          .black-button {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

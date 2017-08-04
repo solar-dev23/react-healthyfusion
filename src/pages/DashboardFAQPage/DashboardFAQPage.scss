@@ -1,0 +1,67 @@
+ .accordion{
+        height:100%;
+        postion:absolute;
+        overflow:hidden;
+        padding-top:40px;   
+        padding-bottom:40px;   
+    }
+       .gap-between{
+        padding-top:10px;
+   }
+
+   //collpsible component
+
+  // The main container element
+.Collapsible {
+  background-color: #AFC4B1;
+}
+
+
+//The content within the collaspable area
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 1px solid #E8E6E6;
+  border-top: 0;
+  color: black;
+  background: #f7f7f7;
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//The link which when clicked opens the collapsable area
+.Collapsible__trigger {
+    display: block;
+  font-weight: 400;
+  text-decoration: none;  
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+  background:#46946d
+  color: white;
+  cursor:pointer;
+  font-size: 16px;
+
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+}
